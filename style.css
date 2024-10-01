@@ -1,0 +1,72 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.25rem;
+}
+
+.btn-light {
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+}
+
+/* Services Section */
+.services-section h2 {
+    font-weight: 700;
+}
+
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    background: #007bff;
+    padding: 60px 0;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.cta-section p {
+    font-size: 1.25rem;
+}
+
+/* Footer */
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+    color: #6c757d;
+}
