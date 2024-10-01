@@ -1,72 +1,142 @@
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* If using a specific font */
+}
+.w-70{
+    width: 75%;
+}
+
+/* Custom style for input field */
+.bg-light-primary {
+    background-color: #0d6efd;
+    /* Replace with your Bootstrap primary color */
+    color: #fff;
+    /* White text color for input */
+}
+
+.bg-light-primary::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    /* Lighter placeholder text */
+}
+
+.dark-blue{
+    color: rgb(33, 33, 95);
+}
+
+.bg-dark-blue{
+    background-color: rgb(33, 33, 95);
+    color: white;
+    width: 100% !important;
+}
+
+/* Increased Margin for the Page */
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Two Column Section */
+.two-column {
+    margin-top: 30px;
+    /* Adjusted margin for better spacing */
+}
+
+.two-column h1 {
+    font-size: 2rem;
+    /* Adjusted font size for mobile */
+    font-weight: 700;
+}
+
+.two-column p {
+    font-size: 1rem;
+    /* Adjusted font size for mobile */
 }
 
 /* Hero Section */
-.hero-section {
-    background: url('https://via.placeholder.com/1500x800') no-repeat center center;
-    background-size: cover;
-    height: 100vh;
+.hero {
+    background: url('https://via.placeholder.com/1500x800') no-repeat center center/cover;
+    height: 60vh;
+    /* Adjusted height for mobile */
     color: white;
+    padding: 20px;
+    /* Added padding for better layout */
 }
 
-.hero-section h1 {
-    font-size: 3.5rem;
+.hero h1 {
+    font-size: 2.5rem;
+    /* Adjusted font size for mobile */
     font-weight: 700;
 }
 
-.hero-section p {
-    font-size: 1.25rem;
-}
-
-.btn-light {
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
+.hero p {
+    font-size: 1rem;
+    /* Adjusted font size for mobile */
+    margin-bottom: 1rem;
 }
 
 /* Services Section */
-.services-section h2 {
+.services h2 {
+    font-size: 2rem;
+    /* Adjusted font size for mobile */
     font-weight: 700;
 }
 
-.card {
-    border: none;
-    transition: all 0.3s ease;
+.card img {
+    width: 80px;
+    /* Adjusted image size for better responsiveness */
 }
 
-.card:hover {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.card h5 {
+    font-size: 1.1rem;
+    /* Adjusted font size for mobile */
+    font-weight: 600;
 }
 
-.card-title {
-    font-weight: 500;
-    margin-top: 20px;
-}
-
-/* CTA Section */
-.cta-section {
-    text-align: center;
-    background: #007bff;
-    padding: 60px 0;
-}
-
-.cta-section h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-}
-
-.cta-section p {
-    font-size: 1.25rem;
+.card p {
+    font-size: 0.9rem;
+    /* Adjusted font size for mobile */
 }
 
 /* Footer */
-.footer {
-    background-color: #f8f9fa;
-    padding: 20px 0;
+footer {
+    background-color: #333;
 }
 
-.footer p {
+footer p {
     margin: 0;
-    color: #6c757d;
+}
+
+/* Media Queries for Better Mobile Responsiveness */
+@media (max-width: 576px) {
+    .two-column h1 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+    }
+
+    .two-column p {
+        font-size: 0.9rem;
+        /* Smaller font size for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+        /* Smaller font size for mobile */
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+        /* Smaller font size for mobile */
+    }
+
+    .services h2 {
+        font-size: 1.5rem;
+        /* Smaller font size for mobile */
+    }
 }

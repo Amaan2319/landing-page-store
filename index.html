@@ -1,109 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page Template</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Store Landing Page</title>
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+
 </head>
-
-<body>
-
+<body class="bg-light">
   <!-- Header -->
-  <header class="bg-light py-3">
-    <nav class="navbar navbar-expand-lg container">
-      <a class="navbar-brand" href="#">BrandLogo</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="btn btn-primary" href="#">Get Started</a>
-          </li>
-        </ul>
+  <!-- Header -->
+<!-- Header -->
+<header class="bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light container">
+    <a class="navbar-brand d-flex align-items-center dark-blue" href="#">
+      <img src="images/logo.png" alt="Brand Logo" width="30" height="30" class="me-2">
+      Careeradise
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Features</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Pricing</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+      </ul>
+    </div>
+    <a href="#" class="btn btn-primary ms-3 d-none d-lg-block">Get Started</a> <!-- Hide on small screens -->
+  </nav>
+  
+</header>
+
+
+
+  <!-- Two Column Section -->
+  <section class="two-column container my-5">
+    <div class="row align-items-center">
+      <!-- Right Section: Image (change order on small screens) -->
+      <div class="col-md-6 order-md-2">
+        <img src="images/top-left-heading-image.jpg" alt="Business Success" class="img-fluid">
       </div>
-    </nav>
-  </header>
+      <!-- Left Section: Text -->
+      <div class="col-md-6 order-md-1">
+        <h6 class="align-items-left dark-blue"> WE ARE #1 ON THE MARKET</h6>
+        <h1 class="display-4 fs-1 dark-blue">Find your job, build your career</h1>
+        <p class="lead w-70">We understand that for you, it's not just a job. It's your business. That's why ae're passionate about not only finding you a quality employee. But also the perfect fit.</p>
+        <a href="#" class="btn btn-primary btn-lg me-2">Discover jobs</a>
+        <a href="#" class="btn btn-outline-primary btn-lg">Free consultation</a>
+      </div>
+    </div>
+  </section>
 
   <!-- Hero Section -->
-  <section class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+  <section class="hero d-flex align-items-center justify-content-center text-center text-white">
     <div class="container">
-      <h1>Empowering Your Business</h1>
-      <p>We build digital solutions that grow your business.</p>
-      <a href="#" class="btn btn-light mt-4">Explore Services</a>
+      <h1 class="dark-blue fs-1">More than <br> 100000+ <span class="text-primary">people</span> engaged</h1>
+      <p class="text-secondary  mx-auto">Do you know what could beat the exicting feeling of a new computer? <br> Make your own. Making your own computer from scratch is not only fun to do, <br> but cheaper as well.</p>
+      <a href="#" class="btn btn-primary btn-lg mt-4">Post a job</a>
     </div>
   </section>
 
-  <!-- Services Section -->
-  <section class="services-section py-5">
-    <div class="container text-center">
-      <h2 class="mb-5">What We Offer</h2>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="card p-3">
-            <img src="https://via.placeholder.com/100" class="card-img-top mx-auto" alt="Service 1" style="width: 100px;">
-            <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">We build responsive websites to boost your online presence.</p>
-            </div>
-          </div>
+  <!-- upload your cv section -->
+   <section class="upload-cv container my-5">
+      <div class="row align-items-center ">
+        <div class="col-md-6 order-md-2">
+          <img src="images/cv-video.jpg" alt="Business Success" class="img-fluid w-70 fluid-left mx-auto my-5">
         </div>
-        <div class="col-md-4">
-          <div class="card p-3">
-            <img src="https://via.placeholder.com/100" class="card-img-top mx-auto" alt="Service 2" style="width: 100px;">
-            <div class="card-body">
-              <h5 class="card-title">Mobile Apps</h5>
-              <p class="card-text">Custom mobile apps designed to engage your customers.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3">
-            <img src="https://via.placeholder.com/100" class="card-img-top mx-auto" alt="Service 3" style="width: 100px;">
-            <div class="card-body">
-              <h5 class="card-title">E-commerce</h5>
-              <p class="card-text">Solutions to scale your business and reach more customers.</p>
-            </div>
-          </div>
-        </div>
+      <div class="col-md-6 order-md-1">
+        
+        <h3 class="display-4 fs-2 dark-blue">Upload you <span class="text-primary">VIDEO CV</span> and get more jog offers.</h3>
+        <p class="lead w-70">We understand that for you, it's not just a job. It's your business. That's why ae're passionate about not only finding you a quality employee. But also the perfect fit.</p>
+        <a href="#" class="btn btn-outline-primary my-2">MORE DETAILS</a>
       </div>
-    </div>
-  </section>
+        
+      </div>
+      
+      
+   </section>
 
-  <!-- Call-to-Action Section -->
-  <section class="cta-section bg-primary text-white py-5">
-    <div class="container text-center">
-      <h2>Ready to Elevate Your Business?</h2>
-      <p>Let's work together and create something extraordinary.</p>
-      <a href="#" class="btn btn-light">Get in Touch</a>
+    <!-- find your perfect work section -->
+   <section class=" container-fluid my-5 bg-dark-blue w-100">
+      <div class="row align-items-center ">
+        <div class="col-md-6 order-md-1">
+          <img src="images/perfect-work.jpg" alt="Business Success" class="img-fluid w-70 fluid-left mx-auto my-5">
+        </div>
+      <div class="col-md-6 order-md-2">
+        
+        <h3 class="display-4 fs-1 ">Find your <span class="text-primary">perfect job</span> based on your interests.</h3>
+        <p class=" w-70">We understand that for you, it's not just a job. It's your business. That's why ae're passionate about not only finding you a quality employee. But also the perfect fit.</p>
+        <a href="#" class="btn btn-light text-primary ">MORE DETAILS</a>
+      </div>
+        
+      </div>
+   </section>
+
+   <!-- Faq section -->
+    <!-- Faq section -->
+<section class="container my-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <h6 class="text-primary">FAQ</h6>
+            <h2 class="text-left dark-blue my-0 p-0">Things people often ask <br> <span class="text-primary">about job</span></h2>
+        </div>
+        <div class="col-md-6">
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button dark-blue fs-4" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is a video CV?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            A video CV is a video presentation of your skills, experience, and personality, allowing you to showcase yourself to potential employers.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button dark-blue fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do I upload my CV?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can upload your CV by navigating to the upload section on our website and following the provided instructions.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button dark-blue fs-4 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What types of jobs can I find?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Our platform offers a variety of job listings across multiple industries, including tech, finance, healthcare, and more.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </section>
+</section>
+
+
+<!-- Latest Blog Posts Section -->
+<section class="latest-blogs py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4 dark-blue">Latest Blog Posts</h2>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="images/study-blog.jpg" class="card-img" style="width: 100%;" alt="Understanding the Job Market">
+                    <div class="card-body">
+                        <h5 class="card-title">Understanding the Job Market</h5>
+                        <p class="card-text">Explore the current trends and demands in the job market to better prepare yourself for future opportunities.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="images/cv-blog.jpg" style="width: 100%;" class="card-img-top" alt="Crafting the Perfect CV">
+                    <div class="card-body">
+                        <h5 class="card-title">Crafting the Perfect CV</h5>
+                        <p class="card-text">Learn the essential elements of a standout CV that catches the eye of recruiters.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card shadow">
+                    <img src="images/interview-tips.png" style="width: 100%;" class="card-img-top" alt="Interview Tips for Success">
+                    <div class="card-body">
+                        <h5 class="card-title">Interview Tips for Success</h5>
+                        <p class="card-text">Get the best tips to ace your interviews and land your dream job.</p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn btn-outline-primary mt-4">View All Blog Posts</a>
+    </div>
+</section>
+
+
+
+
+<!-- Add this to your existing section -->
+<section class="container-fluid text-center p-5 bg-primary my-5">
+  <h3 class="fs-2 text-light">Keep yourself up to date</h3>
+  <p class="fs-5 text-light">Join our weekly Hired 128 digest and be the first one to know about new positions.</p>
+  <div class="row align-items-center justify-content-center">
+    <div class="col-md-4">
+      <input type="email" class="form-control mb-3 bg-light-primary" placeholder="EMAIL" style="background-color: #fff; border: none; color: #007bff;">
+    </div>
+    <div class="col-md-2">
+      <button type="submit" class="btn btn-outline-light">SUBMIT</button>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact-section py-5">
+    <div class="container">
+        <div class="row">
+            <!-- Contact Information -->
+            <div class="col-md-6 text-left">
+                <h6 class="text-muted">Have a question?</h6>
+                <h2 class="dark-blue">We would love to help</h2>
+                <p>5 Washington Square, <br> New York, USA 83475</p>
+                <p><a href="tel:+2175550113" class="text-primary">(217) 555-0113</a></p>
+                <p><a href="tel:+3075550133" class="text-primary">(307) 555-0133</a></p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-md-6">
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="First Name*" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="text" class="form-control" placeholder="Last Name*" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <input type="email" class="form-control" placeholder="Email*" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <input type="tel" class="form-control" placeholder="Phone Number*" required>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <p class="text-muted mt-3">Your privacy is our priority. <a href="#">Learn more.</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  
 
   <!-- Footer -->
-  <footer class="footer bg-light py-4">
-    <div class="container text-center">
-      <p>&copy; 2024 BrandLogo. All Rights Reserved.</p>
+  <footer class=" bg-light text-primary py-4">
+    <div class="container ">
+      <a class="navbar-brand d-flex align-items-center dark-blue" href="#"><img src="images/logo.png" alt="Brand Logo" width="30" height="30" class="me-2">
+      Careeradise
+    </a>
+      <p>&copy; 2024 Careerdise. All Rights Reserved.</p>
     </div>
   </footer>
 
+  <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
